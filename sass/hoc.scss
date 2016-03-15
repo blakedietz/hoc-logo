@@ -1,0 +1,87 @@
+body
+{
+  align-items: center;
+  align-content: center;
+  background: black;
+  display: flex;
+  justify-content: center;
+
+}
+
+$ease-in: cubic-bezier(0.645, 0.045, 0.355, 1);
+$time: 4s;
+
+@for $i from 1 through 13
+{
+  .stripe
+  {
+    &:nth-child(#{$i})>.stripe-fill { animation: stripe-fill-#{$i} $time $ease-in infinite};
+  }
+
+  @keyframes stripe-fill-#{$i}
+  {
+    0%              { width: 0%; }
+    #{10 + 2 * $i}% { width: 0%; }
+    #{40 + 2 * $i}% { width: 100%; }
+    90%             { width: 100%; }
+  }
+}
+
+.flag
+{
+  height: 190px;
+  width: 320px;
+
+  .stripe
+  {
+    width: 100%;
+    height: 7.69%;
+
+    .stripe-fill
+    {
+      height: 100%;
+      width: 100%;
+    }
+
+    &:nth-child(odd)>.stripe-fill
+    {
+      background: #981321;
+    }
+
+    &:nth-child(even)>.stripe-fill
+    {
+      background: #FEFEFE;
+    }
+
+    &:nth-child(n+7)
+    {
+      float: left;
+      width: 62%;
+    }
+  }
+
+  .blue-area
+  {
+
+    display: inline-block;
+    height: 53.85%;
+    width: 38%;
+
+    .blue-area-fill
+    {
+      animation: blue-area-fill $time ease infinite;
+
+      background: #293792;
+
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+ @keyframes blue-area-fill
+ {
+   0%            { width: 0%; }
+   #{(40 + 2*7) - 1 }%  { width: 0%; }
+   100%          { width: 100%; }
+ }

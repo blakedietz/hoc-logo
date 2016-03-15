@@ -1,0 +1,209 @@
+body {
+  align-items: center;
+  align-content: center;
+  background: black;
+  display: flex;
+  justify-content: center; }
+
+.stripe:nth-child(1) > .stripe-fill {
+  animation: stripe-fill-1 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-1 {
+  0% {
+    width: 0%; }
+  12% {
+    width: 0%; }
+  42% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(2) > .stripe-fill {
+  animation: stripe-fill-2 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-2 {
+  0% {
+    width: 0%; }
+  14% {
+    width: 0%; }
+  44% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(3) > .stripe-fill {
+  animation: stripe-fill-3 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-3 {
+  0% {
+    width: 0%; }
+  16% {
+    width: 0%; }
+  46% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(4) > .stripe-fill {
+  animation: stripe-fill-4 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-4 {
+  0% {
+    width: 0%; }
+  18% {
+    width: 0%; }
+  48% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(5) > .stripe-fill {
+  animation: stripe-fill-5 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-5 {
+  0% {
+    width: 0%; }
+  20% {
+    width: 0%; }
+  50% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(6) > .stripe-fill {
+  animation: stripe-fill-6 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-6 {
+  0% {
+    width: 0%; }
+  22% {
+    width: 0%; }
+  52% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(7) > .stripe-fill {
+  animation: stripe-fill-7 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-7 {
+  0% {
+    width: 0%; }
+  24% {
+    width: 0%; }
+  54% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(8) > .stripe-fill {
+  animation: stripe-fill-8 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-8 {
+  0% {
+    width: 0%; }
+  26% {
+    width: 0%; }
+  56% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(9) > .stripe-fill {
+  animation: stripe-fill-9 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-9 {
+  0% {
+    width: 0%; }
+  28% {
+    width: 0%; }
+  58% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(10) > .stripe-fill {
+  animation: stripe-fill-10 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-10 {
+  0% {
+    width: 0%; }
+  30% {
+    width: 0%; }
+  60% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(11) > .stripe-fill {
+  animation: stripe-fill-11 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-11 {
+  0% {
+    width: 0%; }
+  32% {
+    width: 0%; }
+  62% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(12) > .stripe-fill {
+  animation: stripe-fill-12 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-12 {
+  0% {
+    width: 0%; }
+  34% {
+    width: 0%; }
+  64% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.stripe:nth-child(13) > .stripe-fill {
+  animation: stripe-fill-13 4s cubic-bezier(0.645, 0.045, 0.355, 1) infinite; }
+
+@keyframes stripe-fill-13 {
+  0% {
+    width: 0%; }
+  36% {
+    width: 0%; }
+  66% {
+    width: 100%; }
+  90% {
+    width: 100%; } }
+
+.flag {
+  height: 190px;
+  width: 320px; }
+  .flag .stripe {
+    width: 100%;
+    height: 7.69%; }
+    .flag .stripe .stripe-fill {
+      height: 100%;
+      width: 100%; }
+    .flag .stripe:nth-child(odd) > .stripe-fill {
+      background: #981321; }
+    .flag .stripe:nth-child(even) > .stripe-fill {
+      background: #FEFEFE; }
+    .flag .stripe:nth-child(n+7) {
+      float: left;
+      width: 62%; }
+  .flag .blue-area {
+    display: inline-block;
+    height: 53.85%;
+    width: 38%; }
+    .flag .blue-area .blue-area-fill {
+      animation: blue-area-fill 4s ease infinite;
+      background: #293792;
+      height: 100%;
+      width: 100%; }
+
+@keyframes blue-area-fill {
+  0% {
+    width: 0%; }
+  53% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
